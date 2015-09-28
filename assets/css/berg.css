@@ -980,7 +980,8 @@ header.hero.parallax-yes > .parallax > .bcg {
 /*  6.1. SECTION - PROFILE
 /*---------------------------------------------------------------------*/
 #profile {
-  background-color: #0d0c0d;
+  background-color: #fcfcfc;
+  color: #0c0c0c;
 }
 
 @media (min-width: 992px) {

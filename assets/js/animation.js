@@ -21,6 +21,10 @@ $(function(){
         $('.profile-text', '#profile').find('h2').css('opacity', 0).one('inview', function(isInView){
             if (isInView) {$(this).addClass('animated fadeInUp').css('opacity', 1);}
         });
+
+        $('.profile-text', '#profile').find('li').css('opacity', 0).one('inview', function(isInView){
+            if (isInView) {$(this).addClass('animated fadeInRight').css('opacity', 1);}
+        });
         
         
         /*-------------------------------------------------------------------*/
