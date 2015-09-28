@@ -2957,3 +2957,9 @@ footer.footer .copyright p {
   display: inline-block;
   position: relative;
 }
+
+/*===== ABOUT US ========*/
+.profile-text .row:first-child{
+  margin-bottom: 20px;
+}
+
