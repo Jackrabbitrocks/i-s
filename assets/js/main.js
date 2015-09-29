@@ -137,7 +137,7 @@ $(function(){
     if ($.fn.magnificPopup){
         $('.portfolio').magnificPopup({
             delegate: 'a.zoom',
-            type: 'image',
+            type: 'inline',
             fixedContentPos: false,
 
             // Delay in milliseconds before popup is removed
