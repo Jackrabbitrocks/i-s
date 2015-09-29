@@ -136,15 +136,19 @@ $(function(){
     /*-------------------------------------------------------------------*/
     if ($.fn.magnificPopup){
         $('.portfolio').magnificPopup({
-            delegate: 'a.zoom',
             type: 'inline',
+
             fixedContentPos: false,
+            fixedBgPos: true,
 
-            // Delay in milliseconds before popup is removed
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+            
+            midClick: true,
             removalDelay: 300,
-
-            // Class that is added to popup wrapper and background
-            mainClass: 'mfp-fade',
+            mainClass: 'my-mfp-zoom-in',
 
             gallery: {
                 enabled: true,

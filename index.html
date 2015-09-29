@@ -252,9 +252,25 @@
                             <div class="item col-sm-6 col-md-3">
                                 <div class="project-wrapper">
                                     <div class="project-link">
-                                        <a href="assets/images/portfolio/test1.html" class="zoom" title="Buzz Lightyear">
+                                        <a href="#small-dialog" class="zoom" title="Buzz Lightyear">
                                             <i class="icon-Full-Screen"></i>
                                         </a>
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                            <h1>Dialog example</h1>
+                                            <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+                                        </div>
+
+                                        <style>/* Styles for dialog window */
+                                            #small-dialog {
+                                                background: white;
+                                                padding: 20px 30px;
+                                                text-align: left;
+                                                max-width: 400px;
+                                                margin: 40px auto;
+                                                position: relative;
+                                            }
+                                        </style>
 
                                         <a href="single-portfolio-1.html" class="external-link">
                                             <i class="icon-Link"></i>
