@@ -551,6 +551,10 @@ header.hero .hero-body .hero-text p {
   font-size: 20px;
 }
 
+header.hero .hero-body .hero-text p.small{
+  font-size: 85%;
+}
+
 header.hero .hero-body .hero-text .page-scroll {
   margin-top: 50px;
 }
@@ -603,6 +607,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 @media (min-width: 1280px) {
   header.hero.parallax-yes > .parallax > .bcg {
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 1024px){
+  header.hero.parallax-yes > .parallax > .bcg{
+    background-position: right bottom;
   }
 }
 
@@ -670,8 +680,8 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 .navbar.navbar-fixed-top .navbar-brand {
   font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 20px;
+  /*font-weight: 700;*/
   color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -3028,6 +3038,13 @@ footer.footer .copyright p {
   z-index: 10;
   padding-right: 5px;
   padding-bottom: 5px;
+  display: block;
+}
+
+@media (max-width: 370px) {
+  .gold {
+    display: none;
+  }
 }
 
 .shadow{
@@ -3035,6 +3052,13 @@ footer.footer .copyright p {
   position: relative;
   left: 1px;
   top: 1px;
+  text-shadow: none;
+}
+@media (max-width: 370px){
+  .shadow{
+    color:  #D5AD6D;
+    text-shadow: 1px 1px 0 #000000;
+  }
 }
 
 .gold-text-wrapper{
@@ -3049,4 +3073,9 @@ footer.footer .copyright p {
 
 .tracy-list{
   margin-bottom: 50px;
+}
+
+/*=========== MISC =========*/
+#home .gc-cs-link{
+  color: inherit;
 }
