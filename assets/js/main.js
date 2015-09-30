@@ -135,29 +135,22 @@ $(function(){
     /*  9. Portfolio gallery. Requires jQuery Magnific Popup plugin.
     /*-------------------------------------------------------------------*/
     if ($.fn.magnificPopup){
-        $('.portfolio').magnificPopup({
-            type: 'inline',
+        $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
 
-            fixedContentPos: false,
-            fixedBgPos: true,
+                fixedContentPos: false,
+                fixedBgPos: true,
 
-            overflowY: 'auto',
+                overflowY: 'auto',
 
-            closeBtnInside: true,
-            preloader: false,
-            
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-zoom-in',
+                closeBtnInside: true,
+                preloader: false,
+                
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
 
-            gallery: {
-                enabled: true,
-                preload: [0,2],
-                arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-                tPrev: 'Previous Project',
-                tNext: 'Next Project'
-            }
-        });
     }
     
     
