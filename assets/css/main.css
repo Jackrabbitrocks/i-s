@@ -1133,7 +1133,11 @@ header.hero.parallax-yes > .parallax > .bcg {
 #portfolio {
   position: relative;
   z-index: 5;
-  background-color: #171717;
+  background-color: #ececec;
+}
+
+#portfolio h2{
+  color: black;
 }
 
 #portfolio .section-wrapper > .section-content {
