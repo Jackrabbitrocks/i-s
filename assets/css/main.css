@@ -1006,7 +1006,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 /*  6.1.1. PROFILE TEXT
 /*---------------------------------------------------------------------*/
 #profile .profile-text {
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
