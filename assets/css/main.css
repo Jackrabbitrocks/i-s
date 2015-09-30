@@ -1007,7 +1007,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 @media (min-width: 992px) {
   #profile .profile-text {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
@@ -3044,9 +3044,9 @@ footer.footer .copyright p {
 
 /*===== ABOUT US ========*/
 .profile-text .row:first-child{
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .tracy-list{
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
