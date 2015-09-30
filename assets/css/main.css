@@ -69,6 +69,8 @@
 
 8. FOOTER
 
+9. MISC
+
 -----------------------------------------------------------------------*/
 
 
@@ -1201,8 +1203,9 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .portfolio .item > .project-wrapper:hover > .project-title > h4 {
-  margin-top: 0px;
-  opacity: 1;
+  /*margin-top: -10px;*/
+  font-size: 1.7em;
+  /*opacity: 1;*/
 }
 
 .portfolio .item > .project-wrapper > .project-link {
@@ -1249,13 +1252,15 @@ header.hero.parallax-yes > .parallax > .bcg {
   width: 100%;
   height: 48px;
   line-height: 48px;
-  margin-top: -48px;
+  margin-top: -18px;
+  /*margin-top: -48px;*/
   text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  /*opacity: 0;*/
+  -webkit-transition: all 0.5 s ease-out;
+  -moz-transition: all 0.5  s ease-out;
+  -o-transition: all 0.5  s ease-out;
+  transition: all 0.5 s ease-out;
+  font-size: 1.6em;
 }
 
 .filterable-portfolio-nav {
@@ -3078,7 +3083,7 @@ footer.footer .copyright p {
   }
 }
 
-/*=========== MISC =========*/
+/*===========  9. MISC =========*/
 #home .gc-cs-link{
   color: inherit;
 }
@@ -3118,4 +3123,8 @@ footer.footer .copyright p {
         width: 20%;
         float: left;
     }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0 #000000;
 }
