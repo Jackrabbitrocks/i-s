@@ -553,6 +553,7 @@ header.hero .hero-body .hero-text p {
 
 header.hero .hero-body .hero-text p.small{
   font-size: 85%;
+  margin: 0;
 }
 
 header.hero .hero-body .hero-text .page-scroll {
@@ -852,7 +853,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   padding: 80px 0px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .section .section-wrapper > .section-content {
     padding: 100px 0px;
   }
@@ -3071,8 +3072,10 @@ footer.footer .copyright p {
   /*margin-bottom: 20px;*/
 }
 
-.tracy-list{
-  margin-bottom: 50px;
+@media (min-width: 769px){
+  .tracy-list{
+    margin-bottom: 50px;
+  }
 }
 
 /*=========== MISC =========*/
