@@ -150,7 +150,6 @@ $(function(){
                 removalDelay: 300,
                 mainClass: 'my-mfp-zoom-in'
             });
-
     }
     
     

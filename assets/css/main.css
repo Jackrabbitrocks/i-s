@@ -1415,9 +1415,15 @@ button.mfp-arrow:active {
     background: white;
     padding: 20px 30px;
     text-align: left;
-    max-width: 400px;
+    max-width: 475px;
     margin: 40px auto;
     position: relative;
+    color: black;
+}
+
+.small-dialog img{
+  margin: 0 0 10px 15px;
+  float: right;
 }
 
 /*---------------------------------------------------------------------*/
