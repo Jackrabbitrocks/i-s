@@ -129,6 +129,10 @@ $(function(){
             $('.berg-collapse').collapse('hide');
         }
     }, false);
+
+    $('.page-scroll > a').on('click', function(){
+        $('.berg-collapse').collapse('hide');
+    });
     
     
     /*-------------------------------------------------------------------*/
