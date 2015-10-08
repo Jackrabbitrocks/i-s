@@ -714,7 +714,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li > a:hover {
-  background-color: #AB813B;
+  background-color: #A8B7CB;
   color: #ffffff;
 }
 
@@ -868,7 +868,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .section .section-subtitle {
-  color: #a1a1a1;
+  color: #2D4B70;
   font-size: 18px;
   font-style: italic;
 }
@@ -924,7 +924,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 236, 206, 0.75);
 }
 
 .section.parallax-yes > .parallax {
@@ -1208,9 +1208,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .portfolio .item > .project-wrapper:hover > .project-title > h4 {
-  /*margin-top: -10px;*/
-  font-size: 1.5em;
-  /*opacity: 1;*/
+  font-size: 1.65em;
 }
 
 .portfolio .item > .project-wrapper > .project-link {
@@ -1266,6 +1264,10 @@ header.hero.parallax-yes > .parallax > .bcg {
   -o-transition: all 0.5  s ease-out;
   transition: all 0.5 s ease-out;
   font-size: 1.6em;
+}
+
+.project-title a{
+  color: #FFF5CE;
 }
 
 @media (max-width: 768px){
@@ -1969,6 +1971,10 @@ button.mfp-arrow:active {
   background-image: url('../images/testimonial-bg.jpg');
 }
 
+#references h2{
+  color:#143054;
+}
+
 #references .section-wrapper > .section-content {
   padding-bottom: 160px;
 }
@@ -2024,7 +2030,7 @@ button.mfp-arrow:active {
 }
 
 #references .flexslider.references > .slides > .item .content {
-  color: #a1a1a1;
+  color: #2D4B70;
 }
 
 @media (min-width: 768px) {
@@ -2035,7 +2041,7 @@ button.mfp-arrow:active {
 
 #references .flexslider.references > .slides > .item .content h3 {
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #143054;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -2144,6 +2150,10 @@ button.mfp-arrow:active {
 .references .source:after{
   content: url("../images/references/stars.png");
   margin-left: 10px;
+}
+
+.references .source{
+  text-shadow: 1px 1px 0 #000000;
 }
 
 
