@@ -667,7 +667,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   margin: 0;
   border: 0;
   height: 66px;
-  background-color: #171717;
+  background-color: #FFECCE;
   border-bottom: 1px solid #282428;
 }
 
@@ -678,7 +678,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-container {
-  background-color: #171717;
+  background-color: #FFECCE;
 }
 
 .navbar.navbar-fixed-top .navbar-brand {
@@ -724,7 +724,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.active > a {
-  background-color: #171717;
+  background-color: #FDDDA8;
   color: #c80a48;
 }
 
