@@ -714,12 +714,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li > a:hover {
-  background-color: #171717;
+  background-color: #AB813B;
   color: #ffffff;
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li > a:focus {
-  background-color: #171717;
+  background-color: #FFECCE;
   color: #a1a1a1;
 }
 
@@ -729,12 +729,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.active > a:hover {
-  background-color: #171717;
+  background-color: #AB813B;
   color: #c80a48;
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.active > a:focus {
-  background-color: #171717;
+  background-color: #FDDDA8;
   color: #c80a48;
 }
 
@@ -748,7 +748,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.dropdown.open > a:focus {
-  background-color: #171717;
+  background-color: #FDDDA8;
 }
 
 .navbar.navbar-fixed-top .navbar-nav > li.dropdown.active > a,
