@@ -924,7 +924,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .section.parallax-yes > .parallax {
@@ -1261,6 +1261,12 @@ header.hero.parallax-yes > .parallax > .bcg {
   -o-transition: all 0.5  s ease-out;
   transition: all 0.5 s ease-out;
   font-size: 1.4em;
+}
+
+@media (max-width: 768px){
+  .portfolio .item > .project-wrapper > .project-title > h4{
+    font-size: 2.5em;
+  }
 }
 
 .filterable-portfolio-nav {
@@ -2128,6 +2134,11 @@ button.mfp-arrow:active {
 
 #references.parallax-yes > .parallax > .bcg {
   background-image: url('../images/bg-references.jpg');
+}
+
+.references .source:after{
+  content: url("../images/references/stars.png");
+  margin-left: 10px;
 }
 
 
