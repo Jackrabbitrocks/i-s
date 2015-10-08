@@ -1187,7 +1187,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .portfolio .item > .project-wrapper:hover:before {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(253, 221, 168, 0.7);
+}
+
+.project-wrapper:hover a {
+  color: rgb(171, 129, 59);
+  text-shadow: 1px 1px 0 #7F5716;
 }
 
 .portfolio .item > .project-wrapper:hover > .project-link {
@@ -1260,7 +1265,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   -moz-transition: all 0.5  s ease-out;
   -o-transition: all 0.5  s ease-out;
   transition: all 0.5 s ease-out;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 @media (max-width: 768px){
