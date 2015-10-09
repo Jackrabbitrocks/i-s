@@ -98,7 +98,7 @@ body {
 /*  1.2. TEXT COLOR
 /*---------------------------------------------------------------------*/
 .text-grey {
-  color: #a1a1a1;
+  color: #7389A6 ;
 }
 
 .colored-text {
@@ -672,7 +672,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   border: 0;
   height: 66px;
   background-color: #FFECCE;
-  border-bottom: 1px solid #282428;
+  /*border-bottom: 1px solid #282428;*/
 }
 
 @media (min-width: 992px) {
@@ -1047,6 +1047,10 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
+#profile h3, #profile li{
+  color: #2D4B70;
+}
+
 
 /*---------------------------------------------------------------------*/
 /*  6.1.2. CONTACT DETAILS
@@ -1151,10 +1155,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   position: relative;
   z-index: 5;
   background-color: #ececec;
-}
-
-#portfolio h2{
-  color: black;
 }
 
 #portfolio .section-wrapper > .section-content {
@@ -1975,7 +1975,7 @@ button.mfp-arrow:active {
   background-image: url('../images/testimonial-bg-2.jpg');
 }
 
-#references h2{
+#references h2, #portfolio h2, #profile h2{
   color:#143054;
 }
 
