@@ -465,7 +465,7 @@ header.hero .hero-body {
 }
 
 header.hero .hero-body .hero-text {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(150, 150, 150, 0.9);
 }
 
 header.hero .hero-body .hero-text h1 {
@@ -489,7 +489,7 @@ header.hero .hero-body .hero-text h1 {
 header.hero .hero-body .hero-text h1.small {
   font-size: 45px;
   font-weight: 400;
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 @media (min-width: 600px) {
@@ -554,7 +554,7 @@ header.hero .hero-body .hero-text p {
 }
 
 header.hero .hero-body .hero-text p.small{
-  font-size: 85%;
+  font-size: 95%;
   margin: 0;
 }
 
