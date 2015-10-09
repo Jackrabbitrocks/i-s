@@ -444,6 +444,7 @@ header.hero .hero-body {
   display: table-cell;
   vertical-align: middle;
   padding: 80px 30px;
+
 }
 
 @media (min-width: 480px) {
@@ -489,6 +490,7 @@ header.hero .hero-body .hero-text h1 {
 header.hero .hero-body .hero-text h1.small {
   font-size: 45px;
   font-weight: 400;
+  text-shadow: -1px 1px 3px #ffffff;
   /*color: #ffffff;*/
 }
 
@@ -554,6 +556,7 @@ header.hero .hero-body .hero-text p {
 }
 
 header.hero .hero-body .hero-text p.small{
+  text-shadow: -1px 1px 3px #ffffff;
   font-size: 95%;
   margin: 0;
 }
@@ -605,6 +608,7 @@ header.hero.parallax-yes > .parallax > .bcg {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-color: #FFD695;
 }
 
 @media (min-width: 1280px) {
