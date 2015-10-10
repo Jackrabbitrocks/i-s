@@ -393,6 +393,11 @@ span.divider.center {
 /*---------------------------------------------------------------------*/
 /*  4. HOME
 /*---------------------------------------------------------------------*/
+
+#home .container{
+  padding-top: 7%;
+}
+
 header.hero {
   display: table;
   position: relative;
