@@ -218,13 +218,14 @@ $(function(){
     
     
     /*-------------------------------------------------------------------*/
-    /*	12. References slider. Requires Flexslider plugin.
+    /*	12. References and Gallery slider. Requires Flexslider plugin.
     /*-------------------------------------------------------------------*/
     $(window).smartload(function(){
         if ($.fn.flexslider){
-            var flex = $('.flexslider.references');
+            var references = $('.flexslider.references');
+            var gallery = $('.flexslider.gallery');
     
-            flex.flexslider({
+            references.flexslider({
                 selector: ".slides > .item",
                 manualControls: ".flex-control-nav li",
                 directionNav : false,
@@ -235,6 +236,21 @@ $(function(){
                     }
                 }
             }); 
+
+            gallery.flexslider({
+                selector: ".gallery-slides > .item",
+                manualControls: ".flex-control-nav-gallery li",
+                animation: "slide",
+                controlNav: "thumbnails",
+                smoothHeight: "true",
+                directionNav : false,
+                slideshowSpeed: 4000,
+                after: function(slider){
+                    if (!slider.playing) {
+                        slider.play();
+                    }
+                }
+            })
         }
     });
     
@@ -248,104 +264,6 @@ $(function(){
         $('.flexslider').flexslider('next');
     });
     
-    
-    /*-------------------------------------------------------------------*/
-    /*  13. Circle Chart (Section - Skills & Expertise)
-    /*-------------------------------------------------------------------*/
-    var circleChart = function (){
-        $('.circle-chart').find('.item-progress').each(function(){
-            var item = $(this),
-            maxHeight = 108,
-            newHeight = maxHeight * ($(this).data('percent') / 100);
-            
-            // Only animate elements when using non-mobile devices    
-            if (jQuery.browser.mobile === false){
-                item.one('inview', function(isInView) {
-                    if (isInView){
-                        // Animate item
-                        item.animate({
-                            height: newHeight
-                        },1500);
-                    }
-                });
-            }
-            else{
-                item.css('height', newHeight);
-            }
-        });
-    };
-    
-    // Call circleChart() when window is loaded.
-    $(window).smartload(function(){
-        circleChart();
-    });
-    
-    
-    /*-------------------------------------------------------------------*/
-    /*  14. Bar Chart (Section - Knowledge)
-    /*-------------------------------------------------------------------*/
-    var barChart = function (){
-        $('.bar-chart').find('.item-progress').each(function(){
-            var item = $(this),
-            percent = $(this).prev(),
-            newWidth = $(this).parent().width() * ($(this).data('percent') / 100);
-            
-            // Only animate elements when using non-mobile devices    
-            if (jQuery.browser.mobile === false){
-                item.one('inview', function(isInView) {
-                    if (isInView){
-                        // Animate item
-                        item.animate({
-                            width: newWidth
-                        },1500);
-                        
-                        percent.animate({
-                            left: newWidth - percent.width()
-                        },1500);
-                    }
-                });
-            }
-            else{
-                item.css('width', newWidth);
-                percent.css('left', newWidth - percent.width());
-            }
-        });
-    };
-    
-    // Call barChart() when window is loaded.
-    $(window).smartload(function(){
-        barChart();
-    });
-    
-    // Call barChart() when window is resized.
-    $(window).smartresize(function(){
-        barChart();
-    });
-    
-    
-    /*-------------------------------------------------------------------*/
-    /*  15. Milestones counter.
-    /*-------------------------------------------------------------------*/
-    var counter = function (){
-        var number = $('.milestones').find('.number');
-        
-        if ($.fn.countTo){
-            number.countTo({
-                speed: 3000
-            });
-        }
-    };
-    
-    if (jQuery.browser.mobile === false){
-        var number = $('.milestones .number');
-        
-        number.one('inview', function(isInView) {
-            if (isInView){
-                counter();
-            }
-        });
-    }
-    else{
-        counter();
-    }
+
+   
 });
