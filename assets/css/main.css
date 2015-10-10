@@ -1995,6 +1995,11 @@ button.mfp-arrow:active {
   background-image: url('../images/testimonial-bg-2.jpg');
 }
 
+#references .section-content{
+  margin: 0;
+  padding-left: 0;
+}
+
 #references h2, #portfolio h2, #profile h2{
   color:#143054;
 }
