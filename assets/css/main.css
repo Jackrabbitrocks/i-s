@@ -2110,7 +2110,7 @@ button.mfp-arrow:active {
   color: #a1a1a1;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav {
+#references .flexslider.references .flexslider-controls > .flex-control-nav, #gallery .flexslider.references .flexslider-controls > .flex-control-nav-gallery {
   bottom: -60px;
 }
 
