@@ -1025,6 +1025,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 #profile {
   background-color: #fcfcfc;
   color: #0c0c0c;
+  padding: 0 15px;
 }
 
 @media (min-width: 992px) {
