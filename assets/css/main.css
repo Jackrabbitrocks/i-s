@@ -3096,6 +3096,7 @@ button.mfp-arrow:active {
 
 #map > .address h4 {
   line-height: 52px;
+  color: #143054;
 }
 
 #map #google-container {
