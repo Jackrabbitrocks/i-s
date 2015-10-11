@@ -376,8 +376,14 @@ span.divider.center {
 /*---------------------------------------------------------------------*/
 /*  3. PRELOADER
 /*---------------------------------------------------------------------*/
+#jpreContent{
+  margin: 0 auto;
+  height: 119px;
+  width: 336px;
+}
+
 #jpreOverlay {
-  background-color: #0d0c0d;
+  background-color: #A8B7CB;
 }
 
 #jpreLoader {
