@@ -238,7 +238,6 @@ $(function(){
             }); 
 
             gallery.flexslider({
-                slideshow: false,
                 selector: ".gallery-slides > .item",
                 // manualControls: ".flex-control-nav-gallery li",
                 // animation: "slide",
