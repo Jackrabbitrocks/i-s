@@ -1196,12 +1196,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
 
 }
 
+#portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
+  padding-left: 0;
+}
+
 #portfolio .section-wrapper > .section-content {
   padding-bottom: 0px;
 }
 
 .portfolio {
   margin-top: -100px;
+  margin-left: 60px;
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: rgba(255, 255, 255, 0.9);
