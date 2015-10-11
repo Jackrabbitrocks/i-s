@@ -1182,7 +1182,10 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .portfolio {
-  margin-top: 30px;
+  margin-top: -100px;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-color: white;
 }
 
 .portfolio .item {
@@ -1272,12 +1275,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 .portfolio .item > .project-wrapper > .project-title > h4 {
   display: block;
-  position: absolute;
+  position: relative;
   z-index: 15;
   top: 55%;
   left: 0;
   width: 100%;
-  height: 48px;
+  height: 100px;
   /*line-height: 48px;*/
   margin-top: -18px;
   /*margin-top: -48px;*/
