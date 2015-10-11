@@ -1593,7 +1593,28 @@ button.mfp-arrow:active {
 /*---------------------------------------------------------------------*/
 
 #gallery{
-  background-color: #A8B7CB;
+  background-color: #fff;
+}
+
+#gallery .section-wrapper:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  margin-left: -15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d4b70+0,ffffff+100&amp;1+0,0+100 */
+  background: -moz-linear-gradient(left,  rgba(45,75,112,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(45,75,112,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(45,75,112,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(45,75,112,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(45,75,112,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(45,75,112,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d4b70', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+#gallery .section-subtitle{
+  color: #FFECCE;
 }
 
 #gallery .flexslider{
@@ -1634,6 +1655,15 @@ button.mfp-arrow:active {
   position: relative;
   z-index: 10;
   margin-top: -18px;
+}
+
+#gallery .flex-control-paging li a{
+  background: rgba(171, 129, 59, .5);
+  box-shadow: none;
+}
+
+#gallery .flex-control-paging li a.flex-active{
+  background: rgba(171, 129, 59, .9);
 }
 
 /*---------------------------------------------------------------------*/
