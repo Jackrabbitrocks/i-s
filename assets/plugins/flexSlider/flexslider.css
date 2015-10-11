@@ -31,7 +31,7 @@
 .slides,
 .slides > li,
 .flex-control-nav,
-.flex-direction-nav {
+.flex-direction-nav, .flex-control-nav-gallery {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -193,13 +193,13 @@ html[xmlns] .flexslider .slides {
 .flex-pauseplay a .flex-play:before {
   content: '\f003';
 }
-.flex-control-nav {
+.flex-control-nav, .flex-control-nav-gallery {
   width: 100%;
   position: absolute;
   bottom: -40px;
   text-align: center;
 }
-.flex-control-nav li {
+.flex-control-nav li, .flex-control-nav-gallery li {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;

@@ -393,6 +393,11 @@ span.divider.center {
 /*---------------------------------------------------------------------*/
 /*  4. HOME
 /*---------------------------------------------------------------------*/
+
+#home .container{
+  padding-top: 7%;
+}
+
 header.hero {
   display: table;
   position: relative;
@@ -427,6 +432,15 @@ header.hero:before {
   width: 100%;
   height: 100%;
   background: rgba(255,255,255, 0.5);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0+100;White+to+Transparent */
+  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
 }
 
 header.hero .pattern-overlay {
@@ -1005,6 +1019,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 @media (min-width: 992px) {
   #profile .section-wrapper > .section-content {
     padding: 0px;
+    margin: 0;
   }
 }
 
@@ -1051,6 +1066,11 @@ header.hero.parallax-yes > .parallax > .bcg {
   color: #2D4B70;
 }
 
+
+
+.profile-text{
+  margin-top: 15px;
+}
 
 /*---------------------------------------------------------------------*/
 /*  6.1.2. CONTACT DETAILS
@@ -1155,6 +1175,29 @@ header.hero.parallax-yes > .parallax > .bcg {
   position: relative;
   z-index: 5;
   background-color: #ececec;
+  background-image: url(../images/office-bg.jpg);
+  background-size: cover;
+  background-position: 0 -100px;
+}
+
+#portfolio:before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a8b7cb+0,ffffff+100&amp;0.85+0,0+66,0.75+100 */
+background: -moz-linear-gradient(left,  rgba(168,183,203,0.85) 0%, rgba(225,231,237,0) 66%, rgba(255,255,255,0.75) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(168,183,203,0.85)), color-stop(66%,rgba(225,231,237,0)), color-stop(100%,rgba(255,255,255,0.75))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', endColorstr='#bfffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+#portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
+  padding-left: 0;
 }
 
 #portfolio .section-wrapper > .section-content {
@@ -1162,7 +1205,11 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .portfolio {
-  margin-top: 30px;
+  margin-top: -100px;
+  margin-left: 60px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .portfolio .item {
@@ -1217,7 +1264,6 @@ header.hero.parallax-yes > .parallax > .bcg {
 
 .portfolio .item > .project-wrapper > .project-link {
   position: absolute;
-  z-index: 20;
   top: 50%;
   left: 50%;
   width: 88px;
@@ -1250,19 +1296,21 @@ header.hero.parallax-yes > .parallax > .bcg {
   background-color: #c80a48;
 }
 
+.project-title {
+  display: table;
+  height: 100px;
+  width: 100%;
+}
+
 .portfolio .item > .project-wrapper > .project-title > h4 {
-  display: block;
-  position: absolute;
+  display: table-cell;
+  position: relative;
   z-index: 15;
-  top: 50%;
+  /*top: 55%;*/
   left: 0;
   width: 100%;
-  height: 48px;
-  /*line-height: 48px;*/
-  margin-top: -18px;
-  /*margin-top: -48px;*/
+  vertical-align: middle;
   text-align: center;
-  /*opacity: 0;*/
   -webkit-transition: all 0.5 s ease-out;
   -moz-transition: all 0.5  s ease-out;
   -o-transition: all 0.5  s ease-out;
@@ -1271,7 +1319,12 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .project-title a{
-  color: #FFF5CE;
+  color: #7F5716;
+  text-align: center;
+}
+
+.project-title a.text-shadow{
+  text-shadow: 1px 1px 0 #337ab7;
 }
 
 @media (max-width: 768px){
@@ -1568,6 +1621,95 @@ button.mfp-arrow:active {
   }
 }
 
+/*---------------------------------------------------------------------*/
+/*  6.4. SECTION - Gallery
+/*---------------------------------------------------------------------*/
+
+#gallery{
+  background-color: #fff;
+  background-image: url(../images/gallery/gallery-bg.jpg);
+  background-size: cover;
+}
+
+#gallery .section-wrapper:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  width: calc(100% + 15px);
+  height: 100%;
+  margin-left: -15px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7389a6+0,ffffff+100&amp;1+0,0.5+100 */
+background: -moz-linear-gradient(left,  rgba(115,137,166,1) 0%, rgba(255,255,255,0.75) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(115,137,166,1)), color-stop(100%,rgba(255,255,255,0.75))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', endColorstr='#80ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+#gallery .section-subtitle{
+  color: #FFECCE;
+}
+
+#gallery .flexslider{
+  background-color: transparent;
+  border: none;
+}
+
+.flexslider.gallery{
+  overflow: visible !important;
+}
+
+.content .before{
+  position: absolute;
+  bottom: -30px;
+  left: 270px;
+  -webkit-box-shadow: 0 0 23px 3px rgba(0,0,0,.1);
+  box-shadow: 0 0 23px 3px rgba(0,0,0,.1);
+  border-radius: 16px;
+}
+
+.content .after{
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  -webkit-box-shadow: 0 0 23px 13px rgba(0,0,0,.1);
+  box-shadow: 0 0 23px 13px rgba(0,0,0,.1);
+  border-radius: 16px;
+}
+
+.flex-control-nav, .flex-control-nav-gallery{
+  bottom: -80px;
+}
+
+.flex-caption{
+  width: 100%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(45, 75, 112,.5);
+  color: #FFECCE;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  z-index: 10;
+  margin-top: -28px;
+  margin-bottom: -18px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
+}
+
+#gallery .flex-control-paging li a{
+  background: rgba(171, 129, 59, .5);
+  box-shadow: none;
+}
+
+#gallery .flex-control-paging li a.flex-active{
+  background: rgba(171, 129, 59, .9);
+}
 
 /*---------------------------------------------------------------------*/
 /*  6.4. SECTION - STRENGHTS
@@ -1975,6 +2117,11 @@ button.mfp-arrow:active {
   background-image: url('../images/testimonial-bg-2.jpg');
 }
 
+#references .section-content{
+  margin: 0;
+  padding-left: 0;
+}
+
 #references h2, #portfolio h2, #profile h2{
   color:#143054;
 }
@@ -2078,16 +2225,16 @@ button.mfp-arrow:active {
   color: #a1a1a1;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav {
+#references .flexslider.references .flexslider-controls > .flex-control-nav, .flex-control-nav-gallery {
   bottom: -60px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li, .flex-control-nav-gallery > li {
   position: relative;
   margin: 0 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover, .flex-control-nav-gallery > li:hover {
   cursor: pointer;
 }
 
@@ -2104,13 +2251,26 @@ button.mfp-arrow:active {
   opacity: 0.7;
 }
 
+.flex-control-nav-gallery > li:before{
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0c0d;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
 #references .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before, .flex-control-nav-gallery > li.flex-active:before{
   opacity: 0.2;
 }
 
@@ -2972,6 +3132,7 @@ button.mfp-arrow:active {
 
 #map > .address h4 {
   line-height: 52px;
+  color: #143054;
 }
 
 #map #google-container {
