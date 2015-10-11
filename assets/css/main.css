@@ -1259,7 +1259,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
 
 .portfolio .item > .project-wrapper > .project-link {
   position: absolute;
-  z-index: 20;
   top: 50%;
   left: 50%;
   width: 88px;
