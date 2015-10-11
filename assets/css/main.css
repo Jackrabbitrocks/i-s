@@ -1596,6 +1596,46 @@ button.mfp-arrow:active {
   background-color: #A8B7CB;
 }
 
+#gallery .flexslider{
+  background-color: transparent;
+  border: none;
+}
+
+.flexslider.gallery{
+  overflow: visible !important;
+}
+
+.content .before{
+  position: absolute;
+  bottom: -30px;
+  left: 270px;
+}
+
+.content .after{
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+}
+
+.flex-control-nav, .flex-control-nav-gallery{
+  bottom: -80px;
+}
+
+.flex-caption{
+  width: 100%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(45, 75, 112,.5);
+  color: #FFECCE;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  z-index: 10;
+  margin-top: -18px;
+}
+
 /*---------------------------------------------------------------------*/
 /*  6.4. SECTION - STRENGHTS
 /*---------------------------------------------------------------------*/
@@ -2110,16 +2150,16 @@ button.mfp-arrow:active {
   color: #a1a1a1;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav, #gallery .flexslider.references .flexslider-controls > .flex-control-nav-gallery {
+#references .flexslider.references .flexslider-controls > .flex-control-nav, .flex-control-nav-gallery {
   bottom: -60px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li, .flex-control-nav-gallery > li {
   position: relative;
   margin: 0 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li:hover, .flex-control-nav-gallery > li:hover {
   cursor: pointer;
 }
 
@@ -2136,13 +2176,26 @@ button.mfp-arrow:active {
   opacity: 0.7;
 }
 
+.flex-control-nav-gallery > li:before{
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0c0d;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
 #references .flexslider.references .flexslider-controls > .flex-control-nav > li > img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
 
-#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before {
+#references .flexslider.references .flexslider-controls > .flex-control-nav > li.flex-active:before, .flex-control-nav-gallery > li.flex-active:before{
   opacity: 0.2;
 }
 

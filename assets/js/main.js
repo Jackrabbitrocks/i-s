@@ -238,10 +238,11 @@ $(function(){
             }); 
 
             gallery.flexslider({
+                slideshow: false,
                 selector: ".gallery-slides > .item",
-                manualControls: ".flex-control-nav-gallery li",
-                animation: "slide",
-                controlNav: "thumbnails",
+                // manualControls: ".flex-control-nav-gallery li",
+                // animation: "slide",
+                // controlNav: "thumbnails",
                 smoothHeight: "true",
                 directionNav : false,
                 slideshowSpeed: 4000,
