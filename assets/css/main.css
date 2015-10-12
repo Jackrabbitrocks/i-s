@@ -1195,7 +1195,6 @@ header.hero.parallax-yes > .parallax > .bcg {
 @media (max-width: 481px){
   #portfolio{
     background-image: none;
-    padding: 0 15px;
   }
 }
 
@@ -1222,7 +1221,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
 }
 
 #portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
-  padding-left: 0;
+  padding-left: 15px;
+}
+
+@media (min-width: 481px) {
+    #portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
+    padding-left: 0;
+  }
 }
 
 #portfolio .section-wrapper > .section-content {
@@ -1232,7 +1237,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
 .portfolio {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 481px){
+  .portfolio .item:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 @media (min-width: 481px){
@@ -2349,6 +2360,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 .references .source{
   text-shadow: 1px 1px 0 #000000;
 }
+
+/*@media (max-width: 481px){
+  #references .container-fluid{
+    padding-left: 15px;
+  }
+}*/
 
 
 /*---------------------------------------------------------------------*/
