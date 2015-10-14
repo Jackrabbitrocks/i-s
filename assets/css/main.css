@@ -93,6 +93,10 @@ body {
   overflow-x: hidden;
 }
 
+.text-shadow{
+  text-shadow: 1px 1px 0 #7F5716;
+}
+
 
 /*---------------------------------------------------------------------*/
 /*  1.2. TEXT COLOR
