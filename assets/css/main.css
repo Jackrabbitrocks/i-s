@@ -1043,7 +1043,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 #profile .section-wrapper > .section-content{
-  padding-bottom: 0 15px;
+  padding: 0 15px;
 }
 
 @media (min-width: 992px) {
@@ -1258,6 +1258,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 481px){
+  .portfolio{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 @media (max-width: 481px){
@@ -1765,6 +1771,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 
 .flex-control-nav, .flex-control-nav-gallery{
   bottom: -80px;
+}
+
+@media (max-width: 481px){
+  .gallery .flex-control-nav li{
+    margin: 0 10px;
+  }
 }
 
 .flex-caption{
