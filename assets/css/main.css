@@ -1043,7 +1043,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 #profile .section-wrapper > .section-content{
-  padding: 0 15px;
+  padding: 80px 15px;
 }
 
 @media (min-width: 992px) {
