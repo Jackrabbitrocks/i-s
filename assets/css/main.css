@@ -898,14 +898,6 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-.navbar.navbar-fixed-top.center-menu .navbar-nav > li.appointment-btn{
-  display: none;
-}
-
-.is-sticky .navbar.navbar-fixed-top.center-menu .navbar-nav > li.appointment-btn{
-  display: inline-block;
-}
-
 
 /*---------------------------------------------------------------------*/
 /* 6. SECTION
