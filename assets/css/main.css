@@ -749,6 +749,14 @@ header.hero.parallax-yes > .parallax > .bcg {
   letter-spacing: 2px;
 }
 
+.navbar.navbar-fixed-top.center-menu .navbar-nav .appointment-btn > li {
+  display: none;
+}
+
+.is-sticky .navbar.navbar-fixed-top.center-menu .navbar-nav .appointment-btn > li {
+  display: inline-block;
+}
+
 @media (min-width: 992px) {
   .navbar.navbar-fixed-top .navbar-nav > li > a {
     height: 65px;
@@ -888,6 +896,14 @@ header.hero.parallax-yes > .parallax > .bcg {
     float: none;
     display: inline-block;
   }
+}
+
+.navbar.navbar-fixed-top.center-menu .navbar-nav > li.appointment-btn{
+  display: none;
+}
+
+.is-sticky .navbar.navbar-fixed-top.center-menu .navbar-nav > li.appointment-btn{
+  display: inline-block;
 }
 
 
