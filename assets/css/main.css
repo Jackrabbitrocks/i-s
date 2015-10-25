@@ -1807,6 +1807,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
   margin-bottom: -18px;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 15px 15px;
+  text-align: center;
 }
 
 #gallery .flex-control-paging li a{
