@@ -29,6 +29,7 @@
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/magnificPopup/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/flexSlider/flexslider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/backgroundslider/backgroundslider.css">
     
     <!-- Main CSS -->
     <!-- <link href="assets/css/berg.css" rel="stylesheet" type="text/css"> -->
@@ -51,12 +52,12 @@
 
 
         <!-- HERO START -->
-        <header id="home" class="hero parallax-yes">
+        <header id="home" class="hero">
             <!-- <div class="pattern-overlay"></div> -->
 
             <div id="parallax-1" class="parallax">
-                <div class="bcg skrollable skrollable-between" data-anchor-target="#parallax-1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;">
-                    <div class="container">
+                <div class="bcg skrollable skrollable-between hero-slides">
+                    <div class="container hero-slide">
                         <div class="hero-body row">
                             <div class="hero-text col-md-offset-1 col-md-12">
                                 <h1 class="small">
@@ -80,6 +81,7 @@
                             <!-- //.hero-text -->
                         </div>
                     </div>
+                    <div class="hero-slide"> another slide </div>
                     <!-- //.hero-body -->
                 </div>
                 <!-- //.bcg -->
@@ -127,8 +129,8 @@
                             <a href="#gallery">Gallery</a>
                         </li>
 
-                        <li class="page-scroll appointment-btn">
-                            <a href="">Book an Appointment</a>
+                        <li class="appointment-btn">
+                            <a href="http://www.zocdoc.com/practice/iverson-and-syers-45083?lock=true&amp;isNewPatient=false&amp;referrerType=Widget" class="btn btn-lg btn-custom" target="_blank">Book an Appointment</a>
                         </li>
                         
                         <!--<li class="page-scroll">
@@ -897,6 +899,9 @@
 
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
+
+        <!-- Backgroundslider JS -->
+        <script type="text/javascript" src="assets/plugins/backgroundslider/backgroundslider.js"></script>
 
         <!-- Parallax JS -->
         <script src="assets/js/parallax.js"></script>

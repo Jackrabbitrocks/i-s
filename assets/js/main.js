@@ -1,4 +1,8 @@
 $(function(){
+    /*=====================================================*/
+    /*initialize background slider*/
+    /*=====================================================*/
+    $(".hero-slides").BackgroundSlider();
 
     /*-------------------------------------------------------------------*/
     /*  1. Preloader. Requires jQuery jpreloader plugin.

@@ -1,0 +1,62 @@
+.hero-slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.hero-slides .hero-slide {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  vertical-align: top;
+  margin-right: -4px;
+}
+
+.hero-slides .hero-slide .hero-slide-content.hide-info {
+  -moz-transform: translateY(-125%);
+  -ms-transform: translateY(-125%);
+  -webkit-transform: translateY(-125%);
+  transform: translateY(-125%);
+}
+
+.hero-slides .hero-slide .hero-slide-content {
+  position: relative;
+  top: 0;
+  padding: 1em 2em;
+  max-width: 600px;
+  color: white;
+  white-space: normal;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  border-left: 0.5em solid rgba(255, 255, 255, 0.8);
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.hero-slides .hero-slide .hero-slide-content h2 {
+  font-size: 2em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.hero-slides .hero-slide .hero-slide-content h2 span { font-weight: bolder; }
+
+.hero-slides .hero-slide .hero-slide-content p {
+  font-weight: lighter;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
