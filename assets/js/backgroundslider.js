@@ -14,7 +14,7 @@
 		slider.init = function( options ){
 			
 			this.options =			 	$.extend(true, {}, $.Slider.defaults, options);	
-			this.$slides = 				this.$el.children('.hero-slide');			
+			this.$slides = 				this.$el.children('.slide');			
 			this.$toggleButton =		this.options.toggleButton;
 			this.current =		 		this.options.currentSlide;
 			this.total =					this.$slides.length;
