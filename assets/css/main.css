@@ -1094,7 +1094,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 @media (min-width: 992px) {
   #profile .section-wrapper > .section-content {
     padding: 0;
-    margin: 0;
+    /*margin: 0;*/
   }
 }
 
