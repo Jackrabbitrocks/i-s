@@ -224,6 +224,21 @@ $(function(){
         if ($.fn.flexslider){
             var references = $('.flexslider.references');
             var gallery = $('.flexslider.gallery');
+            var hero = $('.flexslider.heroslider');
+
+            hero.flexslider({
+                selector: ".hero-slides > .item",
+                // manualControls: ".flex-control-nav li",
+                directionNav : false,
+                slideshowSpeed: 5000,
+                controlNav: false,
+                animation: "slide",
+                after: function(slider){
+                    if (!slider.playing) {
+                        slider.play();
+                    }
+                }
+            }); 
     
             references.flexslider({
                 selector: ".slides > .item",
@@ -250,7 +265,7 @@ $(function(){
                         slider.play();
                     }
                 }
-            })
+            });
         }
     });
     

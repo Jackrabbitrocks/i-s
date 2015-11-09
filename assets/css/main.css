@@ -73,6 +73,13 @@
 
 -----------------------------------------------------------------------*/
 
+@font-face {
+  font-family: 'proximanova';
+  src: url('../fonts/proximanova-regular-webfont.eot');
+  src: url('../fonts/proximanova-regular-webfont.eot') format('embedded-opentype'), url('../fonts/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proximanova-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*---------------------------------------------------------------------*/
 /*  1. GLOBAL STYLES
@@ -85,12 +92,16 @@ html {
 }
 
 body {
-  background-color: #0d0c0d;
+  background-color: #FFECCE;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #ffffff;
   line-height: 25px;
   overflow-x: hidden;
+}
+
+.text-shadow{
+  text-shadow: 1px 1px 0 #7F5716;
 }
 
 
@@ -99,6 +110,10 @@ body {
 /*---------------------------------------------------------------------*/
 .text-grey {
   color: #7389A6 ;
+}
+
+.text-blue {
+  color: #4D698C;
 }
 
 .colored-text {
@@ -136,7 +151,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family:'proximanova', 'Raleway', sans-serif;
 }
 
 
@@ -146,7 +161,7 @@ h6 {
 /*---------------------------------------------------------------------*/
 .btn.btn-custom {
   background-color: #c80a48;
-  font-family: 'Raleway', sans-serif;
+  font-family:'proximanova', 'Raleway', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -190,6 +205,10 @@ h6 {
   width: 54px;
   height: 54px;
   line-height: 52px;
+}
+
+.hero-CTA{
+  margin-top: 30px;
 }
 
 
@@ -376,8 +395,14 @@ span.divider.center {
 /*---------------------------------------------------------------------*/
 /*  3. PRELOADER
 /*---------------------------------------------------------------------*/
+#jpreContent{
+  margin: 0 auto;
+  height: 119px;
+  width: 336px;
+}
+
 #jpreOverlay {
-  background-color: #0d0c0d;
+  background-color: #E6EBEA;
 }
 
 #jpreLoader {
@@ -394,6 +419,10 @@ span.divider.center {
 /*  4. HOME
 /*---------------------------------------------------------------------*/
 
+#home{
+  min-height: 500px;
+}
+
 #home .container{
   padding-top: 7%;
 }
@@ -404,13 +433,46 @@ header.hero {
   z-index: 5;
   width: 100%;
   height: 100%;
-  background-image: url('../images/bg-hero.jpg');
+  /*background-image: url('../images/bg-hero.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  -o-background-size: cover;*/
+}
+
+.hero-slide-1{
+  background-image: url('../images/bg-hero.jpg');
+}
+
+.hero-slide-2{
+  background-image: url('../images/hero/bg-hero-2.jpg');
+}
+
+.hero-slide-3{
+  background-image: url('../images/hero/bg-hero-3.jpg');
+}
+
+.hero-slide-4{
+  background-image: url('../images/hero/bg-hero-4.jpg');
+}
+
+.hero-slides .item{
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   -o-background-size: cover;
+}
+
+.flexslider.heroslider{
+  border: none;
+}
+
+.flexslider.heroslider, .heroslider .flex-viewport, .hero-slides, .hero-slides .item{
+  height: 100%;
 }
 
 @media (max-width: 991px) {
@@ -431,16 +493,21 @@ header.hero:before {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: rgba(255,255,255, 0.5);
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0+100;White+to+Transparent */
-  background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  background: rgba(255,255,255, 0.75);
+}
 
+@media (min-width: 481px){
+  header.hero:before{
+    background: rgba(255,255,255, 0.5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  }
 }
 
 header.hero .pattern-overlay {
@@ -457,7 +524,7 @@ header.hero .hero-body {
   z-index: 15;
   display: table-cell;
   vertical-align: middle;
-  padding: 80px 30px;
+  /*padding: 80px 30px;*/
 
 }
 
@@ -631,7 +698,13 @@ header.hero.parallax-yes > .parallax > .bcg {
   }
 }
 
-@media (max-width: 1024px){
+@media (min-width: 768px){
+  header.hero.parallax-yes > .parallax > .bcg{
+    background-position: 60% bottom;
+  }
+}
+
+@media (max-width: 767px){
   header.hero.parallax-yes > .parallax > .bcg{
     background-position: right bottom;
   }
@@ -700,7 +773,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 }
 
 .navbar.navbar-fixed-top .navbar-brand {
-  font-family: 'Raleway', sans-serif;
+  font-family:'proximanova', 'Raleway', sans-serif;
   font-size: 20px;
   /*font-weight: 700;*/
   color: #a1a1a1;
@@ -716,12 +789,20 @@ header.hero.parallax-yes > .parallax > .bcg {
   padding-top: 0px;
   height: 40px;
   line-height: 40px;
-  font-family: 'Raleway', sans-serif;
+  font-family:'proximanova', 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #a1a1a1;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.navbar.navbar-fixed-top.center-menu .navbar-nav .appointment-btn > li {
+  display: none;
+}
+
+.is-sticky .navbar.navbar-fixed-top.center-menu .navbar-nav .appointment-btn > li {
+  display: inline-block;
 }
 
 @media (min-width: 992px) {
@@ -794,7 +875,7 @@ header.hero.parallax-yes > .parallax > .bcg {
 .navbar.navbar-fixed-top .navbar-nav .dropdown-menu > li a {
   height: 35px;
   line-height: 35px;
-  font-family: 'Raleway', sans-serif;
+  font-family:'proximanova', 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #a1a1a1;
@@ -1014,12 +1095,17 @@ header.hero.parallax-yes > .parallax > .bcg {
 #profile {
   background-color: #fcfcfc;
   color: #0c0c0c;
+  /*padding: 0 15px;*/
+}
+
+#profile .section-wrapper > .section-content{
+  padding: 80px 15px;
 }
 
 @media (min-width: 992px) {
   #profile .section-wrapper > .section-content {
-    padding: 0px;
-    margin: 0;
+    padding: 0;
+    /*margin: 0;*/
   }
 }
 
@@ -1180,6 +1266,12 @@ header.hero.parallax-yes > .parallax > .bcg {
   background-position: 0 -100px;
 }
 
+@media (max-width: 481px){
+  #portfolio{
+    background-image: none;
+  }
+}
+
 #portfolio:before{
   content: '';
   position: absolute;
@@ -1193,11 +1285,23 @@ background: -o-linear-gradient(left,  rgba(168,183,203,0.85) 0%,rgba(225,231,237
 background: -ms-linear-gradient(left,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* IE10+ */
 background: linear-gradient(to right,  rgba(168,183,203,0.85) 0%,rgba(225,231,237,0) 66%,rgba(255,255,255,0.75) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', endColorstr='#bfffffff',GradientType=1 ); /* IE6-9 */
+}
 
+@media (max-width:481px){
+  #portfolio:before{
+    width: calc(100% + 30px);
+    left: -15px;
+  }
 }
 
 #portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
-  padding-left: 0;
+  padding-left: 15px;
+}
+
+@media (min-width: 481px) {
+    #portfolio .container-fluid, #references .container-fluid, #gallery .container-fluid{
+    padding-left: 0;
+  }
 }
 
 #portfolio .section-wrapper > .section-content {
@@ -1206,10 +1310,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9a8b7cb', e
 
 .portfolio {
   margin-top: -100px;
-  margin-left: 60px;
+  /*margin-left: 80px;*/
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 481px){
+  .portfolio{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 481px){
+  .portfolio .item{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .portfolio .item:nth-child(odd){
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (max-width: 768px){
+  .portfolio {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .portfolio:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
 }
 
 .portfolio .item {
@@ -1634,7 +1765,6 @@ button.mfp-arrow:active {
 #gallery .section-wrapper:before{
   position: absolute;
   content: '';
-  width: 100%;
   width: calc(100% + 15px);
   height: 100%;
   margin-left: -15px;
@@ -1646,7 +1776,22 @@ background: -o-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.
 background: -ms-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* IE10+ */
 background: linear-gradient(to right,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', endColorstr='#80ffffff',GradientType=1 ); /* IE6-9 */
+}
 
+@media (max-width: 481px){
+  #gallery{
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7389a6+0,ffffff+100&amp;1+0,0.5+100 */
+    background: -moz-linear-gradient(left,  rgba(115,137,166,1) 0%, rgba(255,255,255,0.75) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(115,137,166,1)), color-stop(100%,rgba(255,255,255,0.75))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(115,137,166,1) 0%,rgba(255,255,255,0.75) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', endColorstr='#80ffffff',GradientType=1 ); /* IE6-9 */
+  }
+  #gallery .section-wrapper:before{
+    background: none;
+  }
 }
 
 #gallery .section-subtitle{
@@ -1684,6 +1829,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
   bottom: -80px;
 }
 
+@media (max-width: 481px){
+  .gallery .flex-control-nav li{
+    margin: 0 10px;
+  }
+}
+
 .flex-caption{
   width: 100%;
   padding: 2%;
@@ -1700,6 +1851,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
   margin-bottom: -18px;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 15px 15px;
+  text-align: center;
 }
 
 #gallery .flex-control-paging li a{
@@ -1709,6 +1861,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 
 #gallery .flex-control-paging li a.flex-active{
   background: rgba(171, 129, 59, .9);
+}
+
+@media (max-width: 481px){
+  .gallery-slides{
+    margin-left: -40px;
+  }
+  .before{
+    display: none;
+  }
 }
 
 /*---------------------------------------------------------------------*/
@@ -2118,7 +2279,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 }
 
 #references .section-content{
-  margin: 0;
+  /*margin: 0;*/
   padding-left: 0;
 }
 
@@ -2156,7 +2317,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 #references .flexslider.references > .slides > .item .profile:before {
   display: block;
   position: absolute;
-  content: '\ec98';
+  content: '\f075';
   bottom: 0;
   left: 0;
   width: 45px;
@@ -2164,7 +2325,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
   line-height: 47px;
   margin-bottom: -8px;
   background-color: #c80a48;
-  font-family: 'icomoon';
+  font-family: 'FontAwesome';
   font-size: 18px;
   text-align: center;
   -webkit-box-shadow: 3px 3px 10px #0d0c0d;
@@ -2311,14 +2472,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
   background-image: url('../images/bg-references.jpg');
 }
 
-.references .source:after{
+.references .yelp:after{
   content: url("../images/references/stars.png");
   margin-left: 10px;
+  margin-top: 5px;
+}
+
+.references .google:after{
+  content: url("../images/references/5stars.png");
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .references .source{
   text-shadow: 1px 1px 0 #000000;
 }
+
+/*@media (max-width: 481px){
+  #references .container-fluid{
+    padding-left: 15px;
+  }
+}*/
 
 
 /*---------------------------------------------------------------------*/
@@ -3146,7 +3320,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7389a6', end
 /*  8. FOOTER
 /*---------------------------------------------------------------------*/
 footer.footer {
-  background-color: #FFF5CE;
+  background-color: #A8B7CB;
   padding-top: 70px;
   padding-bottom: 50px;
   position: relative;
@@ -3160,12 +3334,12 @@ footer.footer .page-scroll > a {
   left: 50%;
   width: 48px;
   height: 46px;
-  line-height: 48px;
+  line-height: 63px;
   margin-top: -94px;
   margin-left: -24px;
   background-color: #c80a48;
-  color: #ffffff;
-  font-size: 24px;
+  color: #337ab7;
+  font-size: 46px;
   text-align: center;
   border-radius: 4px;
   box-shadow: 0 3px 0 #970837;

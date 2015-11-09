@@ -17,6 +17,7 @@ $(function(){
         // Set google map options
         var map_options = {
             center: new google.maps.LatLng($latitude, $longitude),
+            draggable: false,
             zoom: $map_zoom,
             panControl: true,
             zoomControl: true,

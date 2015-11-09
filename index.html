@@ -21,7 +21,7 @@
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     
     <!-- Font icons CSS -->
-    <link href="assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/plugins/icons-mind/style.css" rel="stylesheet" type="text/css"> -->
     <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     
     <!-- Plugins CSS -->
@@ -51,28 +51,27 @@
 
 
         <!-- HERO START -->
-        <header id="home" class="hero parallax-yes">
+        <header id="home" class="hero">
             <!-- <div class="pattern-overlay"></div> -->
 
-            <div id="parallax-1" class="parallax">
-                <div class="bcg skrollable skrollable-between" data-anchor-target="#parallax-1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;">
+            <div class="flexslider heroslider">
+                <div style="position:absolute; color:black;">
                     <div class="container">
                         <div class="hero-body row">
-                            <div class="hero-text col-md-offset-1 col-md-12">
+                            <div class="hero-text col-md-offset-3 col-sm-offset-1 col-md-12">
                                 <h1 class="small">
                                     Welcome to
                                 </h1>
                                 <div class="gold-text-wrapper">
                                     <img src="assets/images/logo-hero.png" class="img-responsive" alt="">
                                 </div>
-                        
-                                <p>Your family dentists.</p>
-                                <p class="small">450 Sutter, Suite 2005 San Francisco, Ca</p>
-                                <p class="small">officemanager@iversonandsyers.com</p>
-                                <p class="small">415.398.1017</p>
-                        
-                                <div class="page-scroll">
-                                    <a href="#profile" class="btn btn-lg btn-custom">
+
+                                <p class="text-grey">The art and science of beautiful smiles.</p>
+                                <p class="small text-blue">450 Sutter, Suite 2005 San Francisco, Ca</p>
+                                <p class="small text-blue">officemanager@iversonandsyers.com</p>
+                                <p class="small text-blue">415.398.1017</p>
+                                <div class="hero-CTA">
+                                    <a href="http://www.zocdoc.com/practice/iverson-and-syers-45083?lock=true&amp;isNewPatient=false&amp;referrerType=Widget" class="btn btn-lg btn-custom" target="_blank">
                                         book an appointment
                                     </a>
                                 </div>
@@ -83,7 +82,13 @@
                     </div>
                     <!-- //.hero-body -->
                 </div>
-                <!-- //.bcg -->
+                <div class="hero-slides">
+                    <div class="item hero-slide-1"></div>
+                    <div class="item hero-slide-2"></div>
+                    <div class="item hero-slide-3"></div>
+                    <div class="item hero-slide-4"></div>
+                </div>
+                
             </div>
             <!-- //.parallax -->
         </header>
@@ -107,6 +112,7 @@
 
                 <div class="navbar-collapse collapse berg-collapse">
                     <ul class="nav navbar-nav">
+
                         <li class="page-scroll">
                             <a href="#home">Home</a>
                         </li>
@@ -125,6 +131,10 @@
 
                         <li class="page-scroll">
                             <a href="#gallery">Gallery</a>
+                        </li>
+
+                        <li class="page-scroll appointment-btn">
+                            <a href="">Book an Appointment</a>
                         </li>
                         
                         <!--<li class="page-scroll">
@@ -147,7 +157,7 @@
             <div class="section-wrapper">
                 <div class="section-content container">
                     <div class="row">          
-                        <div class="col-md-7 match-height col-md-offset-1">
+                        <div class="col-md-6 match-height col-md-offset-1">
 
                             <!-- PROFILE TEXT START -->
                             <div class="profile-text padding-right-yes">
@@ -172,7 +182,7 @@
                                                 <li>the American Academy of Cosmetic Dentists</li>
                                                 <li>the American Dental Association</li>
                                                 <li>the California Dental Association</li>
-                                                <li>and the San Francisco Dental Society.</li>
+                                                <li>the San Francisco Dental Society.</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -199,7 +209,7 @@
                                                 <li>The American Academy of Cosmetic Dentists</li>
                                                 <li>The American Dental Association</li>
                                                 <li>The California Dental Association</li>
-                                                <li>and The San Francisco Dental Society.</li>
+                                                <li>The San Francisco Dental Society.</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -211,9 +221,10 @@
 
                         </div>
                         <!-- //.col-md-7 -->
+                        
 
                         <!-- PROFILE PICTURE START -->
-                        <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
+                        <div class="col-md-5 col-lg-4 hidden-xs hidden-sm match-height pp-wrapper">
                             <div class="profile-picture style-one">
                                 <img src="assets/images/happyCouple-2.jpg" alt="profile picture" class="img-responsive"/>
                             </div>
@@ -231,7 +242,7 @@
         <!-- PORTFOLIO SECTION START -->
         <section id="portfolio" class="section">
             <div class="container-fluid section-wrapper">
-                <div class="section-content">
+                <div class="section-content container">
                     <div class="row">
 
                         <div class="col-md-6 col-md-offset-1">
@@ -243,42 +254,42 @@
                             <span class="divider"></span>
                         </div>
                         <!-- //.col-md-7 -->
-                          <!-- PORTFOLIO START -->
-                        <div class="portfolio col-md-4">
-                            
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-                                        </div>
-                                        <!-- //.project-link -->
+                        <!-- PORTFOLIO START -->
+                        <div class="portfolio col-md-5 col-lg-4">
 
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Porcelain Veneers</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
 
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
+                                            <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
+                                            <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
+                                            <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
+                                            <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
+                                        </div>
                                     </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
+                                    <!-- //.project-link -->
 
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="invisalign" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/invisalign.jpg" alt="veneers" />Invisalign</strong>
-                                                    <p>Many people are  interested in straightening their teeth but don&rsquo;t want to wear visible metal  braces.<br />
-                                                        <br />
-                                                        <em>Invisalign</em> is a&nbsp; series of thin  removable plastic trays called &ldquo;aligners&rdquo;. The patient wears the aligners until  a more ideal smile is achieved. Perfect for adults who have had braces and just  need a touch up or for people who have never had braces and want a minor  correction. The aligners are undetectable and can be worn at all times. </p>
+                                    <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
+                                        <h4><a >Porcelain Veneers</a></h4>
+                                    </div>
+                                    <!-- //.project-title -->
+
+                                </div>
+                                <!-- //.project-wrapper -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="invisalign" class="zoom-anim-dialog mfp-hide small-dialog">
+                                            <strong><img src="assets/images/portfolio/invisalign.jpg" alt="veneers" />Invisalign</strong>
+                                            <p>Many people are  interested in straightening their teeth but don&rsquo;t want to wear visible metal  braces.<br />
+                                                <br />
+                                                <em>Invisalign</em> is a&nbsp; series of thin  removable plastic trays called &ldquo;aligners&rdquo;. The patient wears the aligners until  a more ideal smile is achieved. Perfect for adults who have had braces and just  need a touch up or for people who have never had braces and want a minor  correction. The aligners are undetectable and can be worn at all times. </p>
                                                 <p>Click here for a video about <em>Invisalign</em>: <a href="https://www.youtube.com/watch?t=1&v=m8cMGvWAPZY" target="_blank"> on youtube</a></p>
                                             </div>
 
@@ -299,17 +310,17 @@
                                     <div class="project-wrapper">
                                         <div class="project-link">
                                             <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
+                                            <div id="implants" class="zoom-anim-dialog mfp-hide small-dialog">
+                                                <strong><img src="assets/images/portfolio/implants_01.gif" alt="implants" width="270" height="180" align="right" />Dental Implants</strong>
+                                                <p>If you've lost teeth or may need to, implants are the most superior and reliable method of tooth replacement. They reproduce the natural look and function of  your original teeth and restore your smile to what it was. Implants bond with the bone in imitation of the original root structure of the tooth enabling you to bite, chew and smile without any worries about stability, comfort or esthetics.</p>
+                                                <p>If you are wearing a bridge or a denture, implants can replace your current dental work and give you your original and natural smile back.</p>
+                                                <p>No other procedure in dentistry reverses aging like dental implants can.</p>
                                             </div>
 
                                         </div>
                                         <!-- //.project-link -->
 
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
+                                        <div  href="#implants" class="popup-with-zoom-anim project-title">
                                             <h4><a >Dental Implants</a></h4>
                                         </div>
                                         <!-- //.project-title -->
@@ -323,441 +334,500 @@
                                     <div class="project-wrapper">
                                         <div class="project-link">
                                             <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Fillings</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
+                                            <div id="fillings" class="zoom-anim-dialog mfp-hide small-dialog"><strong>Fillings</strong>
+                                                <p>Although it is our goal to preventative cavities, tooth decay does occur.</p>
+                                                <p>If you need a cavity filled, there are a few options for you to consider. Not all filling materials are appropriate and suited for every situation. We are happy to discuss the benefits and limitations of the following options.</p>
+                                                <ul>
+                                                  <li><strong>Porcelain Inlay/Onlay</strong> The tooth decay is removed and replaced by a porcelain piece customized and crafted to look like the natural portion of the tooth.</li>
+                                                  <li><strong>Gold Inlay/Onlay</strong> The tooth decay is removed and replaced with a customized piece of gold metal.</li>
+                                                  <li><strong>Composite Resin</strong> The tooth decay is removed and white, tooth colored composite resin is flowed and packed into the cavity.</li>
+                                                  <li><strong>Amalgam</strong> The tooth decay is removed and silver colored amalgam is packed into the cavity.</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <!-- //.project-link -->
+                                      <div  href="#fillings" class="popup-with-zoom-anim project-title">
+                                        <h4><a >Fillings</a></h4>
                                     </div>
-                                    <!-- //.project-wrapper -->
+                                    <!-- //.project-title -->
+
                                 </div>
-                                <!-- //.item -->
-
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >TMJ Rehabilitation</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Gum Recontouring</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Smile Whitening</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Crowns</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div>
-
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Peridontal Maintenance</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-                                <div class="item col-sm-6">
-                                    <div class="project-wrapper">
-                                        <div class="project-link">
-                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
-                                            <div id="porcelainVeneers" class="zoom-anim-dialog mfp-hide small-dialog">
-                                                <strong><img src="assets/images/portfolio/veneers1.jpg" alt="veneers" />Porcelain veneers</strong>
-                                                <p>Veneers are porcelain coverings that are bonded to the front of  your teeth to look and act like natural tooth structure. They are a popular cosmetic procedure and can reverse a wide variety of smile problems.</p>
-                                                <p>Discolored, stained  or yellowed teeth can be made white again, chipped teeth made whole, spaces and gaps closed and slightly crooked teeth straightened.</p>
-                                                <p>Your smile can be customized into more ideal proportions in as little as two visits. </p>
-                                            </div> 
-
-                                            
-                                        </div>
-                                        <!-- //.project-link -->
-
-                                        <div  href="#porcelainVeneers" class="popup-with-zoom-anim project-title">
-                                            <h4><a >Full Mouth Reconstruction</a></h4>
-                                        </div>
-                                        <!-- //.project-title -->
-
-                                    </div>
-                                    <!-- //.project-wrapper -->
-                                </div>
-                                <!-- //.item -->
-                            
-                        </div>
-                        <!-- PORTFOLIO END -->  
-                    </div>
-                    <!-- //.row -->
-
-                    
-                </div>
-                <!-- //.section-content -->
-            </div>
-            <!-- //.container-fluid -->
-        </section>
-        <!-- //PORTFOLIO SECTION END -->
-
-        <!-- REFERENCES SECTION START -->
-        <section id="references" class="section bg-image-yes">
-            <div class="container-fluid section-wrapper">
-                <div class="section-content">
-                    <div class="row">
-                        <div class="col-md-11 col-md-offset-1">
-                            <h2 class="section-title uppercase">Testimonials</h2>
-
-                            <p class="section-subtitle">We love our patients as much as they love us.</p>
-
-                            <span class="divider"></span>
-                        </div>
-                        <!-- //.col-md-12 -->
-                    </div>
-                    <!-- //.row -->
-
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <div class="flexslider references">
-                                <div class="slides">
-                                    <div class="item">
-                                        <div class="animated" data-animation-effect="flipInX">
-                                            <div class="profile hidden-xs">
-                                                <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                            </div>
-
-                                            <div class="content">
-                                                <h3>I K.</h3>
-
-                                                <p>
-                                                    "Both Dr Syers and Dr Iverson are exceptionally great dentists with excellent people skills. All of the office staff is great too. I have been seeing the same hygienist Shadelly all these years, she is exceptional as are the rest of the people in this dental office. "
-                                                </p>
-
-                                                <p class="source">
-                                                    <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
-                                                </p>
-                                            </div>
-                                            <!-- //.content -->
-                                        </div>
-                                        <!-- //.animated -->
-                                    </div>
-                                    <!-- //.item -->
-
-                                    <div class="item">
-                                        <div class="animated" data-animation-effect="flipInX">
-                                            <div class="profile hidden-xs">
-                                                <img src="assets/images/references/megan.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                            </div>
-
-                                            <div class="content">
-                                                <h3>Megan J.</h3>
-
-                                                <p>
-                                                    "From the kind greeting when I walk in, to the gentle and thorough cleanings as well as the professional exam and procedures I feel completely cared for. I can not refer them enough to anyone who wants the best dentist around."
-                                                </p>
-
-                                                <p class="source">
-                                                    <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
-                                                </p>
-                                            </div>
-                                            <!-- //.content -->
-                                        </div>
-                                        <!-- //.animated -->
-                                    </div>
-                                    <!-- //.item -->
-
-                                    <div class="item">
-                                        <div class="animated" data-animation-effect="flipInX">
-                                            <div class="profile hidden-xs">
-                                                <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                            </div>
-
-                                            <div class="content">
-                                                <h3>George D.</h3>
-
-                                                <p>
-                                                    "In a crazy busy world, I always find their office to be a quiet calm oasis.  Everyone is so friendly and I don't have any anxiety about going to the dentist.  My hygenist is quick and gentle, and I always feel very well taken care of.<br>I highly recommend this office."
-                                                </p>
-
-                                                <p class="source">
-                                                    <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
-                                                </p>
-                                            </div>
-                                            <!-- //.content -->
-                                        </div>
-                                        <!-- //.animated -->
-                                    </div>
-                                    <!-- //.item -->
-
-                                    <div class="item">
-                                        <div class="animated" data-animation-effect="flipInX">
-                                            <div class="profile hidden-xs">
-                                                <img src="assets/images/references/thom.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                            </div>
-
-                                            <div class="content">
-                                                <h3>Thom C.</h3>
-
-                                                <p>
-                                                    "Long history of courteous, positive service with friendly faces and a relaxing environment.  If you fear the dentist, this is a great fit for you!"
-                                                </p>
-
-                                                <p class="source">
-                                                    <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
-                                                </p>
-                                            </div>
-                                            <!-- //.content -->
-                                        </div>
-                                        <!-- //.animated -->
-                                    </div>
-                                    <!-- //.item -->
-
-                                    <div class="item">
-                                        <div class="animated" data-animation-effect="flipInX">
-                                            <div class="profile hidden-xs">
-                                                <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive img-circle img-thumbnail"/>
-                                            </div>
-
-                                            <div class="content">
-                                                <h3>Jerry V.</h3>
-
-                                                <p>
-                                                    "Their practice is the best. They are extremely professional and friendly. The staff is also great. I would never consider going any where else. I recommend them without reservation."
-                                                </p>
-
-                                                <p class="source">
-                                                    <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
-                                                </p>
-                                            </div>
-                                            <!-- //.content -->
-                                        </div>
-                                        <!-- //.animated -->
-                                    </div>
-                                    <!-- //.item -->
-                                </div>
-                                <!-- //.slides -->
-
-                                <div class="flexslider-controls">
-                                    <ul class="flex-control-nav">
-                                        <li>
-                                            <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive"/>
-                                        </li>
-
-                                        <li>
-                                            <img src="assets/images/references/megan.jpg" alt="" class="img-responsive"/>
-                                        </li>
-
-                                        <li>
-                                            <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive"/>
-                                        </li>
-
-                                        <li>
-                                            <img src="assets/images/references/thom.jpg" alt="" class="img-responsive"/>
-                                        </li>
-
-                                        <li>
-                                            <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive"/>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- //.flexslider-controls -->
-
-                                <ul class="flex-direction-nav-custom list-inline hidden-xs">
-                                    <li>
-                                        <a class="flex-prev" href="#">
-                                            <i class="icon-Left-3"></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a class="flex-next" href="#">
-                                            <i class="icon-Right-3"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <!-- //.project-wrapper -->
                             </div>
-                            <!-- //.flexslider -->
-                        </div>
-                        <!-- //.col-md-8 -->
-                    </div>
-                    <!-- //.row -->
-                </div>
-                <!-- //.section-content -->
-            </div>
-            <!-- //.container -->
-        </section>
-        <!-- //REFERENCES SECTION END -->
+                            <!-- //.item -->
 
-        <section id="gallery" class="section">
-            <div class="container-fluid section-wrapper">
-                <div class="section-content">
-                    <div class="row">
-                        <div class="col-md-3 col-md-offset-1">
-                            <h2 class="section-title uppercase">Gallery</h2>
-                            <p class="section-subtitle">
-                                A before and after gallery of real Iverson &amp; Syers patients
-                            </p>
-                            <span class="divider"></span>
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="tmj" class="zoom-anim-dialog mfp-hide small-dialog">
+                                            <strong><img src="assets/images/portfolio/tmj_ani.gif" width="166" height="167" align="right" />Temporomandibular Joint Rehabilitation</strong>
+                                            <p>If you are suffering from Temporomandibular Joint Disorder, termed TMD, you will notice some or all of the following symptoms: jaw pain, stiffness, noises or  difficulty upon opening your mouth, excessive wear on your teeth, an uncomfortable bite or a bite that seems to change over time, neck and shoulder pain, headaches or  ringing in the ears or earaches.</p>
+                                            <p>The goal of temperomandibular joint rehabilitation is the goal of all physical therapy procedures, to restore the joint to optimal function and to relieve pain. Typically this is done with splint therapy, customized as needed to stabilize and relieve the joint. Once splint therapy is completed, the bite is assessed  and modified if necessary to correspond to the appropriate joint relationship.</p>
+                                            <p>Dr. Iverson specializes in temporomandibular joint rehabilitation and splint therapy and has received extensive training in this area. </p>
+                                        </div>
+
+                                    </div>
+                                    <!-- //.project-link -->
+
+                                    <div  href="#tmj" class="popup-with-zoom-anim project-title">
+                                        <h4><a >TMJ Rehabilitation</a></h4>
+                                    </div>
+                                    <!-- //.project-title -->
+
+                                </div>
+                                <!-- //.project-wrapper -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="recontouring" class="zoom-anim-dialog mfp-hide small-dialog">
+                                            <strong>Gum Recontouring</strong>
+                                            <p>You may have a beautiful smile but feel your teeth look short or that you show too much gum. Often, the gum can be reshaped to give your smile a more balanced, even look and give the appearance of lengthening your teeth.</p>
+                                            <p><strong>Laser Gum Recontouring</strong> is quick and fairly painless with a short healing time. Often this service is provided in conjunction with <em>Porcelain Veneers</em> in order to create symmetry and create a more ideal smile proportion.</p>
+                                        </div>
+                                    </div>
+                                    <!-- //.project-link -->
+
+                                    <div  href="#recontouring" class="popup-with-zoom-anim project-title">
+                                        <h4><a >Gum Recontouring</a></h4>
+                                    </div>
+                                    <!-- //.project-title -->
+
+                                </div>
+                                <!-- //.project-wrapper -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="whitening" class="zoom-anim-dialog mfp-hide small-dialog">
+                                            <strong>Smile Whitening</strong>
+                                            <p>Over time, the brightness of your smile will diminish due to staining foods, beverages and smoking.</p>
+                                            <p>Whitening is a very simple process with dramatic, age reversing results. You chose the method and strength of whitening that suits you best depending upon the results you want to achieve.</p>
+                                            <p>Want your smile brightened just a little? Take home our home-bleaching kit.</p>
+                                            <p>Want a significant change? Let us bleach your teeth in our office in a little over an hour.</p>
+                                        </div>
+
+                                    </div>
+                                    <!-- //.project-link -->
+
+                                    <div  href="#whitening" class="popup-with-zoom-anim project-title">
+                                        <h4><a >Smile Whitening</a></h4>
+                                    </div>
+                                    <!-- //.project-title -->
+
+                                </div>
+                                <!-- //.project-wrapper -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item col-sm-6">
+                                <div class="project-wrapper">
+                                    <div class="project-link">
+                                        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                        <div id="crowns" class="zoom-anim-dialog mfp-hide small-dialog">
+                                         <strong>Crowns</strong>
+                                         <p>A tooth may need a crown if enough of the structure is gone from decay or if the tooth is fractured. If you need a crown you have three options to consider. Not all crowns are appropriate and suited for every situation. We are happy to discuss the benefits and limitations of the following options. </p>
+                                         <ul>
+                                          <li>Porcelain Crowns</li>
+                                          <li>Gold Crowns</li>
+                                          <li>Porcelain/Gold Crowns</li>
+                                      </ul> 
+                                  </div>
+                              </div>
+                              <!-- //.project-link -->
+
+                              <div  href="#crowns" class="popup-with-zoom-anim project-title">
+                                <h4><a >Crowns</a></h4>
+                            </div>
+                            <!-- //.project-title -->
                         </div>
-                        <div class="col-md-5 col-md-offset-1">
-                            <div class="flexslider gallery">
-                                <ul class="gallery-slides">
-                                    <div class="item">
-                                        <div class="content">
-                                        <img src="assets/images/gallery/before1.png" alt="" class="img-responsive before"/>
-                                            <div class="after">
-                                                <img src="assets/images/gallery/after1.png" alt="">
-                                                <p class="flex-caption">This image is wrapped in a link!</p>
-                                            </div>
-                                        </div>
-                                        <!-- //.content -->
+
+                        <!-- //.project-wrapper -->
+                    </div>
+                    <!-- //.item -->
+                    <div class="item col-sm-6">
+                        <div class="project-wrapper">
+                            <div class="project-link">
+                                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                <div id="periodontal" class="zoom-anim-dialog mfp-hide small-dialog">
+                                    <img src="assets/images/portfolio/relax.jpg" alt="relax" align="right" />
+                                    <strong>Periodontal Maintenance<br /><br /></strong>
+                                    <p>Relax in our reclining massage chair, take in the panoramic views of San Francisco and have your teeth cleaned!</p>
+                                    <p>If you have needed more thorough cleanings in the past or if you currently need one, our hygienists are skilled and gentle with a very high level of success.</p>
+                                    <p>They can design and customize a periodontal maintenance program that suits you individually.</p>
+                                </div>
+                            </div>
+                            <!-- //.project-link -->
+
+                            <div  href="#periodontal" class="popup-with-zoom-anim project-title">
+                                <h4><a >Periodontal Maintenance</a></h4>
+                            </div>
+                            <!-- //.project-title -->
+
+                        </div>
+                        <!-- //.project-wrapper -->
+                    </div>
+                    <!-- //.item -->
+                    <div class="item col-sm-6">
+                        <div class="project-wrapper">
+                            <div class="project-link">
+                                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                <div id="reconstruction" class="zoom-anim-dialog mfp-hide small-dialog">
+                                    <strong>Full Mouth Reconstruction</strong>
+                                    <p>Over time, years of mismatched or poorly fitted crowns and fillings can so significantly alter the bite that they cause additional damage to the teeth and the joint of the jaw (Temporomandibular Joint or TMJ). Habits such as grinding and clenching can wear down the teeth until they are short and flat, literally being worn away. You may notice pain or noises in the temporomandibular joint, have stiffness or limited range when opening your mouth or develop periodontal problems. Full Mouth Reconstruction  is necessary when a patient must have thier teeth restored to optimum function.</p>
+                                    <p>FMR will preserve the integrity of the joint and of the teeth by relocating the stresses of chewing to the most advantageous and appropriate locations.  Sometimes termed Temporomandibular Joint Rehabilitation for Temporomandibular Disorder (TMD).</p>
+                                    <p>Dr. Iverson has received extensive training in TMD and specializes in joint rehabilitation and FMR. </p>
+                                </div> 
+
+
+                            </div>
+                            <!-- //.project-link -->
+
+                            <div  href="#reconstruction" class="popup-with-zoom-anim project-title">
+                                <h4><a >Full Mouth Reconstruction</a></h4>
+                            </div>
+                            <!-- //.project-title -->
+
+                        </div>
+                        <!-- //.project-wrapper -->
+                    </div>
+                    <!-- //.item -->
+                    <div style="clear:both;"></div>
+                </div>
+                <!-- PORTFOLIO END -->  
+            </div>
+            <!-- //.row -->
+
+
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container-fluid -->
+</section>
+<!-- //PORTFOLIO SECTION END -->
+
+<!-- REFERENCES SECTION START -->
+<section id="references" class="section bg-image-yes">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                    <h2 class="section-title uppercase">Testimonials</h2>
+
+                    <p class="section-subtitle">We love our patients as much as they love us.</p>
+
+                    <span class="divider"></span>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="flexslider references">
+                        <div class="slides">
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/george.jpg" height="148" width="148" alt="" class="img-responsive img-circle img-thumbnail"/>
                                     </div>
-                                    <!-- //.item -->
-                                    <div class="item">
-                                        <div class="content">
-                                        <img src="assets/images/gallery/before2.png" alt="" class="img-responsive before"/>
-                                            <div class="after">
-                                                <img src="assets/images/gallery/after2.png" alt="">
-                                                <p class="flex-caption">This image is wrapped in a link!</p>
-                                            </div>
-                                        </div>
-                                        <!-- //.content -->
+
+                                    <div class="content">
+                                        <h3>George Dodge</h3>
+
+                                        
+                                        <p>This office made me enjoy going to the dentist.  Friendly, serene, calming.  Wonderful hygienist, gentle and quick.</p>
+                                        <p>Dr. Iverson and Dr Syers are fantastic, I always feel welcome and I always feel very well taken care of.  And my teeth have never looked or felt better.</p>
+                                        <p>I would highly recommend Iverson &amp; Syers</p>
+                                        
+
+                                        <p class="source google">
+                                            <span><a href="https://www.google.com/search?q=google+reviews+iverson+and+syers+dds">Google</a></span>
+                                        </p>
                                     </div>
-                                    <!-- //.item -->
-                                    <div class="item">
-                                        <div class="content">
-                                        <img src="assets/images/gallery/before3.png" alt="" class="img-responsive before"/>
-                                            <div class="after">
-                                                <img src="assets/images/gallery/after3.png" alt="">
-                                                <p class="flex-caption">This image is wrapped in a link!</p>
-                                            </div>
-                                        </div>
-                                        <!-- //.content -->
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/megan.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
                                     </div>
-                                    <!-- //.item -->
-                                    <div class="item">
-                                        <div class="content">
-                                        <img src="assets/images/gallery/before4.png" alt="" class="img-responsive before"/>
-                                            <div class="after">
-                                                <img src="assets/images/gallery/after4.png" alt="">
-                                                <p class="flex-caption">This image is wrapped in a link!</p>
-                                            </div>
-                                        </div>
-                                        <!-- //.content -->
+
+                                    <div class="content">
+                                        <h3>Megan J.</h3>
+
+                                        <p>
+                                            "From the kind greeting when I walk in, to the gentle and thorough cleanings as well as the professional exam and procedures I feel completely cared for. I can not refer them enough to anyone who wants the best dentist around."
+                                        </p>
+
+                                        <p class="source yelp">
+                                            <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
+                                        </p>
                                     </div>
-                                    <!-- //.item -->
-                                    <div class="item">
-                                        <div class="content">
-                                            <img src="assets/images/gallery/before5.png" alt="" class="img-responsive before"/>
-                                            <div class="after">
-                                                <img src="assets/images/gallery/after5.png" alt="">
-                                                <p class="flex-caption">This image is wrapped in a link!</p>
-                                            </div>
-                                        </div>
-                                        <!-- //.content -->
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/nicole.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
                                     </div>
-                                    <!-- //.item -->
-                                </ul>
-                                <!-- //.slides -->
+
+                                    <div class="content">
+                                        <h3>Nicole Bongard</h3>
+
+                                        <p>
+                                            Not only are Tracy and Todd extremely knowledgeable and gentle, they and their staff are a pleasure to be around. I've had experiences with many dentists, having lived in numerous cities, and Tracy and Todd are by far my favorites. You might pay a little more than at other dentists, but trust me, it is well worth it. They don't recommend any procedures unless they're truly needed. The atmosphere of the office is warm and welcoming, with sky blue tones, classical music, and a great view while sitting in the chair. Plus, their 3 sons are adorable! :-)
+                                        </p>
+
+                                        <p class="source google">
+                                            <span><a href="https://www.google.com/search?q=google+reviews+iverson+and+syers+dds">Google</a></span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                    </div>
+
+                                    <div class="content">
+                                        <h3>I K.</h3>
+
+                                        <p>
+                                            "Both Dr Syers and Dr Iverson are exceptionally great dentists with excellent people skills. All of the office staff is great too. I have been seeing the same hygienist Shadelly all these years, she is exceptional as are the rest of the people in this dental office. "
+                                        </p>
+
+                                        <p class="source yelp">
+                                            <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                    </div>
+
+                                    <div class="content">
+                                        <h3>George D.</h3>
+
+                                        <p>
+                                            "In a crazy busy world, I always find their office to be a quiet calm oasis.  Everyone is so friendly and I don't have any anxiety about going to the dentist.  My hygenist is quick and gentle, and I always feel very well taken care of.<br>I highly recommend this office."
+                                        </p>
+
+                                        <p class="source yelp">
+                                            <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/thom.jpg" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                    </div>
+
+                                    <div class="content">
+                                        <h3>Thom C.</h3>
+
+                                        <p>
+                                            "Long history of courteous, positive service with friendly faces and a relaxing environment.  If you fear the dentist, this is a great fit for you!"
+                                        </p>
+
+                                        <p class="source yelp">
+                                            <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+
+                            <div class="item">
+                                <div class="animated" data-animation-effect="flipInX">
+                                    <div class="profile hidden-xs">
+                                        <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive img-circle img-thumbnail"/>
+                                    </div>
+
+                                    <div class="content">
+                                        <h3>Jerry V.</h3>
+
+                                        <p>
+                                            "Their practice is the best. They are extremely professional and friendly. The staff is also great. I would never consider going any where else. I recommend them without reservation."
+                                        </p>
+
+                                        <p class="source yelp">
+                                            <span><a href="http://www.yelp.com/biz/iverson-and-syers-dds-san-francisco">Yelp</a></span>
+                                        </p>
+                                    </div>
+                                    <!-- //.content -->
+                                </div>
+                                <!-- //.animated -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.slides -->
+
+                        <div class="flexslider-controls">
+                            <ul class="flex-control-nav">
+                                <li>
+                                    <img src="assets/images/references/george.jpg" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/megan.jpg" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/nicole.jpg" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/logo-reference.png" height="120" width="120" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/thom.jpg" alt="" class="img-responsive"/>
+                                </li>
+
+                                <li>
+                                    <img src="assets/images/references/logo-reference.png" alt="" class="img-responsive"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //.flexslider-controls -->
+
+                        <ul class="flex-direction-nav-custom list-inline hidden-xs">
+                            <li>
+                                <a class="flex-prev" href="#">
+                                    <i class="icon-Left-3"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="flex-next" href="#">
+                                    <i class="icon-Right-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //.flexslider -->
+                </div>
+                <!-- //.col-md-8 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.section-content -->
+    </div>
+    <!-- //.container -->
+</section>
+<!-- //REFERENCES SECTION END -->
+
+<section id="gallery" class="section">
+    <div class="container-fluid section-wrapper">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1">
+                    <h2 class="section-title uppercase">Gallery</h2>
+                    <p class="section-subtitle text-shadow">
+                        A before and after gallery of real Iverson &amp; Syers patients
+                    </p>
+                    <span class="divider"></span>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="flexslider gallery">
+                        <ul class="gallery-slides">
+                            <div class="item">
+                                <div class="content">
+                                    <img src="assets/images/gallery/before1.png" alt="" class="img-responsive before"/>
+                                    <div class="after">
+                                        <img src="assets/images/gallery/after1.png" alt="">
+                                        <p class="flex-caption">Full Mouth Reconstruction</p>
+                                    </div>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="assets/images/gallery/before2.png" alt="" class="img-responsive before"/>
+                                    <div class="after">
+                                        <img src="assets/images/gallery/after2.png" alt="">
+                                        <p class="flex-caption">Full Mouth Reconstruction</p>
+                                    </div>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="assets/images/gallery/before3.png" alt="" class="img-responsive before"/>
+                                    <div class="after">
+                                        <img src="assets/images/gallery/after3.png" alt="">
+                                        <p class="flex-caption">Implants</p>
+                                    </div>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="assets/images/gallery/before4.png" alt="" class="img-responsive before"/>
+                                    <div class="after">
+                                        <img src="assets/images/gallery/after4.png" alt="">
+                                        <p class="flex-caption">Implants</p>
+                                    </div>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                            <div class="item">
+                                <div class="content">
+                                    <img src="assets/images/gallery/before5.png" alt="" class="img-responsive before"/>
+                                    <div class="after">
+                                        <img src="assets/images/gallery/after5.png" alt="">
+                                        <p class="flex-caption">Implants</p>
+                                    </div>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+                        </ul>
+                        <!-- //.slides -->
 
                                 <!-- <div class="flexslider-controls">
                                     <ul class="flex-control-nav-gallery">
@@ -807,7 +877,7 @@
         <!-- MAP START -->
         <div id="map">
             <div class="address">
-                <h4>450 Sutter Street, Suite 2005</h4>
+                <h4>450 Sutter Street, Suite 2005 | officemanager@iversonandsyers.com | 415.398.1017</h4>
             </div>
             <!-- //.address -->
             
@@ -824,7 +894,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-scroll">
-                            <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
+                            <a href="#page-top">^</a>
                         </div>
                         <!-- //.page-scroll -->
 
@@ -849,20 +919,6 @@
                                 </div>
                                 <!-- //.item -->
                             </li>
-
-                            <li>
-                                <div class="item">
-                                    <a href="#" target="_blank"><i class="fa fa-dribbble"></i></a>
-                                </div>
-                                <!-- //.item -->
-                            </li>
-
-                            <li>
-                                <div class="item">
-                                    <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                                </div>
-                                <!-- //.item -->
-                            </li>
                         </ul>
                     </div>
                     <!-- //.col-md-12 -->
@@ -883,7 +939,9 @@
             <!-- //.container -->
         </footer>
         <!-- //FOOTER END -->
-
+        <div id="jpreContent">
+            <img src="assets/images/logo-hero.png" style="position:absolute; top:-55%;" height="119" width="336" alt="">
+        </div>
 
         <!-- Plugins JS -->
         <script src="assets/plugins/jquery.min.js"></script>
